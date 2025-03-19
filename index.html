@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <meta property="og:title" content="Abhishek's Portfolio">
+    <meta property="og:url" content="https://prathameshv07.github.io/portfolio/">
+    <meta property="og:image" content="https://prathameshv07.github.io/portfolio/assets/preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description" content="Welcome to my portfolio!">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="hero-name">Abhishek Pandey</h1>
+            <p id="auto-typer" style="margin-bottom: 10px;">I'm passionate about <span id="typing-text"></span><span class="cursor">|</span></p>
+            <a href="#about" class="btn btn-primary">About Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets\profile.jpg" alt="My Profile">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a data-driven Enthusiast with expertise in Python, SQL, and Machine Learning. My work spans data analytics, AI, and web development, solving real-world challenges with impactful solutions.</p>
+                    <p>I have built interactive dashboards, ML-powered applications, and business intelligence tools using frameworks like Flask, and Power BI. Passionate about innovation and problem-solving, I continuously explore new technologies to create scalable and efficient applications.</p>
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education/Experience Section -->
+    <section id="education-experience">
+        <div class="container">
+            <h2 class="section-title">Education</h2><!-- Academic & Professional Background -->
+            
+            <div id="section-header" class="section-header">
+                <h3>Academic Background</h3> <!-- Background Information -->
+                <!-- <div class="section-toggle">
+                    <button class="toggle-btn active" onclick="toggleSection('education')">Education</button>
+                    <button class="toggle-btn" onclick="toggleSection('experience')">Work Experience</button>
+                </div> -->
+            </div>
+            
+            <!-- Education Content -->
+            <div id="education-content" class="toggle-content active">
+                <div class="education-card">
+                    <div class="education-entry">
+                        <h4 class="education-degree">Master of Science in Data Science</h4>
+                        <p class="education-institution">Thakur College of Science and Commerce</p>
+                        <p class="education-date">2023 - 2025</p>
+                    </div>
+                    <div class="education-entry">
+                        <h4 class="education-degree">Bachelor of Science in Computer Science</h4>
+                        <p class="education-institution">Thakur College of Science and Commerce</p>
+                        <p class="education-date">2019 - 2022</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div id="experience-content" class="toggle-content">
+                <div class="experience-card">
+                    
+                    <div class="experience-entry">
+                        <h4 class="experience-title">Machine Learning Intern</h4>
+                        <p class="experience-company">CODTECH IT Solutions</p>
+                        <p class="experience-date">February 2022 - March 2022</p>
+                        <p class="experience-description">Developed and optimized AI/ML models, including Decision Trees, Sentiment Analysis, Image Classification, and Recommendation Systems.</p>
+                        <p class="experience-description">Utilized Python, TensorFlow, Scikit-Learn, Pandas, and NumPy for data preprocessing, model training, and evaluation.</p>
+                        <p class="experience-description">Implemented hyperparameter tuning and feature engineering to enhance model performance.</p>
+                        <p class="experience-description">Gained hands-on experience in deep learning, NLP, and computer vision applications.</p>
+                    </div>
+                    <div class="experience-entry">
+                        <h4 class="experience-title">Technical Support Engineer (Data Analytics Focus)</h4>
+                        <p class="experience-company">ACL Digital (Client: Jio Partner IT)</p>
+                        <p class="experience-date">May 2022 – November 2023</p>
+                        <p class="experience-description">Analyzed large datasets using SQL, Python, and Excel to extract insights and support business decisions.</p>
+                        <p class="experience-description">Developed interactive dashboards and reports using Power BI to track key performance indicators (KPIs).</p>
+                        <p class="experience-description">Automated data workflows to improve reporting efficiency and operational accuracy.</p>
+                        <p class="experience-description">Optimized SQL queries for faster data retrieval and worked with GIS tools for location-based data analysis.</p>
+                        <p class="experience-description">Collaborated with cross-functional teams to resolve data-related issues and enhance IT operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <!-- Tools Category -->
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="assets/skills/sql.png" class="custom-skill-icon" alt="SQL">
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/chart.png" class="custom-skill-icon" alt="Power BI">
+                            <span class="skill-name">Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/python.png" class="custom-skill-icon" alt="Python">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/git.png" class="custom-skill-icon" alt="Git">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github skill-icon"></i>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/database.png" class="custom-skill-icon" alt="MongoDB">
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws skill-icon"></i>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Techniques Category -->
+                <div class="skill-category">
+                    <h3>Techniques</h3>
+                    <div class="skills-grid">
+                        <!-- <div class="skill-item">
+                            <i class="fas fa-brain skill-icon"></i>
+                            <span class="skill-name">Machine Learning</span>
+                        </div> -->
+                        <div class="skill-item">
+                            <img src="assets/skills/chart-pie.png" class="custom-skill-icon" alt="Data Visualization">
+                            <span class="skill-name">Data Visualization</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/data-modelling.png" class="custom-skill-icon" alt="Data Visualization">
+                            <!-- <i class="fas fa-project-diagram skill-icon"></i> -->
+                            <span class="skill-name">Data Modeling</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch skill-icon"></i>
+                            <span class="skill-name">Version Control</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/chart-bar.png" class="custom-skill-icon" alt="Data Analysis">
+                            <span class="skill-name">Data Analysis</span>
+                        </div>
+                        <!-- <div class="skill-item">
+                            <i class="fa-solid fa-microchip skill-icon"></i>
+                            <span class="skill-name">Artificial Intelligence</span>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <!-- Frameworks Category -->
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="assets/skills/python.png" class="custom-skill-icon" alt="Flask">
+                            <span class="skill-name">Flask</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/django.webp" class="custom-skill-icon" alt="Data Visualization">
+                            <span class="skill-name">Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/html.png" class="custom-skill-icon" alt="HTML5">
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/css.png" class="custom-skill-icon" alt="HTML5">
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/bootsrap.png" class="custom-skill-icon" alt="Data Visualization">
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/java-script.png" class="custom-skill-icon" alt="HTML5">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/skills/java.png" class="custom-skill-icon" alt="HTML5">
+                            <span class="skill-name">Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="main-project-title">My Recent Work &nbsp;</h2>
+            <!-- <h2 class="section-title">Projects</h2> -->
+            <div class="projects-grid">
+
+                <!-- AquaSense Project (Featured) -->
+                <div class="project-card main-project" data-project="project1" id="aquasense">
+                    <div class="project-image">
+                        <img src="assets\project_images\Diabetic-Retinopathy.png" alt="DR-Insight"><!-- size: 600x400 -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">DR-Insight</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">MobileNetV2</span>
+                            <span class="project-tag">Multi-layer Perceptron</span>
+                            <span class="project-tag">Random Forest</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">Image preprocessing</span>
+                            <span class="project-tag">Feature Extraction</span>
+                            <span class="project-tag">Deep learning</span>
+                        </div>
+                        <p>DR-Insight is a Diabetic Retinopathy Classification Web App that helps detect diabetic retinopathy from retinal images using AI. It provides quick and accurate diagnosis, assisting doctors in early detection and treatment.</p>
+                        <div class="project-buttons">
+                            <!-- <a href="./pages/aquasense.html" target="_blank" onclick="event.stopPropagation()" class="btn btn-secondary btn-sm">View Project</a> -->
+                            <a href="./pages/dr-insight.html" class="btn btn-secondary btn-sm">View Project &nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-project="project2" id="codex">
+                    <div class="project-image">
+                        <img src="assets/project_images/codex.jpeg" alt="codex"><!-- size: 600x400 -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CodeX Drink Insights</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">Market Analysis</span>
+                            <span class="project-tag">Consumer Insights</span>
+                            <span class="project-tag">Business Intelligence</span>
+                            <!-- <span class="project-tag">Survey Data</span>
+                            <span class="project-tag">Marketing Strategy</span>
+                            <span class="project-tag">Dashboard Design</span> -->
+                        </div>
+                        <p>A Power BI dashboard analyzing survey data from 10,000 respondents to provide strategic insights for CodeX, a German energy drink company entering the Indian market.</p>
+                        <div class="project-buttons">
+                            <!-- <a href="./pages/aquasense.html" target="_blank" onclick="event.stopPropagation()" class="btn btn-secondary btn-sm">View Project</a> -->
+                            <a href="./pages/codex.html" class="btn btn-secondary btn-sm">View Project &nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-project="project3" id="plag">
+                    <div class="project-image">
+                        <img src="assets\project_images\Movie_recommendation_system.jpg" alt="Movie-RS"><!-- size: 600x400 -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Movie Recommendation System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Streamlit</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Recommendation System</span>
+                            <span class="project-tag">Data Science</span>
+                            <span class="project-tag">Artificial Intelligence</span>
+                            <span class="project-tag">Movie Analytics</span>
+                            <span class="project-tag">User Personalization</span>
+                            <span class="project-tag">Content-Based Filtering</span>
+                            <!-- <span class="project-tag">Python</span>
+                            <span class="project-tag">Google Search API</span>
+                            <span class="project-tag">KMP Algorithm</span> -->
+                        </div>
+                        <p>A Streamlit-based Movie Recommender System that suggests movies based on user input using machine learning techniques.
+                            This system utilizes content-based filtering to provide personalized recommendations.</p>
+                        <div class="project-buttons">
+                            <!-- <a href="./pages/aquasense.html" target="_blank" onclick="event.stopPropagation()" class="btn btn-secondary btn-sm">View Project</a> -->
+                            <a href="./pages/Movie-Recommendation-System.html" class="btn btn-secondary btn-sm">View Project &nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-project="project4" id="atliq">
+                    <div class="project-image">
+                        <img src="assets\project_images\Skin_Leasion.jpg" alt="Skin_Leasion"><!-- size: 600x400 -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Automated Skin Lesion Diagnosis</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Research Paper</span>
+                            <span class="project-tag">Skin Lesion Diagnosis</span>
+                            <span class="project-tag">Machine Learning Classifiers</span>
+                            <span class="project-tag">Deep Learning</span>
+                            <span class="project-tag">Feature Extraction</span>
+                            <span class="project-tag">VGG16</span>
+                            <span class="project-tag">Support Vector Machine</span>
+                            <span class="project-tag">Random Forest</span>
+                            <span class="project-tag">Extra Trees</span>
+                            <span class="project-tag">Multi-layer Perceptron</span>
+                            <span class="project-tag">Image Pre-processing</span>
+                            <!-- <span class="project-tag">Data Analysis</span>
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">Business Intelligence</span> -->
+                        </div>
+                        <p>My research focuses on AI-driven medical diagnostics, including automated skin lesion detection and diabetic retinopathy classification. These studies aim to enhance early disease detection and improve healthcare accuracy.</p>
+                        <div class="project-buttons">
+                            <!-- <a href="./pages/aquasense.html" target="_blank" onclick="event.stopPropagation()" class="btn btn-secondary btn-sm">View Project</a> -->
+                            <a href="./pages/Skin_Lesion.html" class="btn btn-secondary btn-sm">View Project &nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- <div class="view-all-container">
+                <a href="pages/beast_projects.html" class="view-all-link">View All Projects &nbsp;<i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+
+                <!-- Certificate 1 -->
+                <div class="certificate-item">
+                    <a href="https://drive.google.com/file/d/1Ot1eyclQBs83_kbNTDaEmCtGwuHJUu4y/view?usp=sharing" target="_blank">
+                        <img src="assets/certificates/Tata_Certificate.jpeg" alt="Tata Group's Data Visualisation" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Tata Group's Data Visualisation: Empowering Business with Effective Insights</p>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-item">
+                    <a href="https://www.hackerrank.com/certificates/af31a6ef0036" target="_blank">
+                        <img src="assets/certificates/Multicon_Blockchain.jpeg" alt="BlockChain" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">BLOCKCHAIN</p>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-item">
+                    <a href="https://www.credly.com/badges/e91f64b2-4ae6-45d9-a01a-a0cbd504f604/public_url" target="_blank">
+                        <img src="assets/certificates/Alteryx_Foundational_Micro_Credential_Badge.jpg" alt="Alteryx Foundational" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Alteryx Foundational</p>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-item">
+                    <a href="https://www.credly.com/badges/79e51fdc-5f78-4750-8e0d-f03cbd0161d1/public_url" target="_blank">
+                        <img src="assets/certificates/Machine_Learning_Fundamentals_Micro_Credential.jpg" alt="Machine Learning Fundamentals" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Machine Learning Fundamentals</p>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate-item">
+                    <a href="https://www.credly.com/badges/174b6466-10a1-45bf-911c-558e99fe0d18/public_url" target="_blank">
+                        <img src="assets/certificates/Alteryx_Auto_Insights_Micro_Credential_Badge20250203-25-x8p2yt_page-0001.jpg" alt="Alteryx Auto Insights" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Alteryx Auto Insights</p>
+                </div>
+
+                <!-- Certificate 6 -->
+                <div class="certificate-item">
+                    <a href="https://www.kaggle.com/learn/certification/abhishekpandey88201/intermediate-machine-learning" target="_blank">
+                        <img src="assets/certificates/Abhishek Pandey - Intermediate Machine Learning.png" alt="Intermediate Machine Learning" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Intermediate Machine Learning</p>
+                </div>
+
+                <!-- Certificate 7 -->
+                <div class="certificate-item">
+                    <a href="https://www.kaggle.com/learn/certification/abhishekpandey88201/intro-to-deep-learning" target="_blank">
+                        <img src="assets/certificates/Abhishek Pandey - Intro to Deep Learning.png" alt="Deep Learning" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Deep Learning</p>
+                </div>
+
+                <!-- Certificate 8 -->
+                <div class="certificate-item">
+                    <a href="https://www.hackerrank.com/certificates/cbdf1c2c94e6" target="_blank">
+                        <img src="assets/certificates/problem_solving_basic certificate_page-0001.jpg" alt="Hackerrank" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Problem solving</p>
+                </div>
+
+                <!-- Certificate 9 -->
+                <div class="certificate-item">
+                    <a href="https://www.hackerrank.com/certificates/6b4a61efa2ac" target="_blank">
+                        <img src="assets/certificates/sql_basic certificate (1)_page-0001.jpg" alt="Hackerrank" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">SQL</p>
+                </div>
+
+                <!-- Certificate 10 -->
+                <div class="certificate-item">
+                    <a href="" target="_blank">
+                        <img src="assets/certificates/Star_Performer.jpeg" alt="Star Performer" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Star Performer</p>
+                </div>
+
+                <!-- Certificate 11 -->
+                <div class="certificate-item">
+                    <a href="" target="_blank">
+                        <img src="assets/certificates/Diamond_Performer_1.jpeg" alt="Diamond Performer" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Diamond Performer</p>
+                </div>
+
+                <!-- Certificate 12 -->
+                <div class="certificate-item">
+                    <a href="" target="_blank">
+                        <img src="assets/certificates/Diamond_Performer_2.jpeg" alt="Diamond Performer" class="certificate-img">
+                    </a>
+                    <p style="margin-bottom: 10px;">Diamond Performer</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            
+            <div class="contact-container">               <!-- Left side illustration -->
+                <div class="contact-illustration">
+                    <img src="assets/customer-support.png" alt="Contact illustration">
+                </div>
+                
+                <!-- Right side form -->
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mgvavrqz" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="send-button">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abhishek-pandey-108012219/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Abhishek18141" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:abhishekpandey88201@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; Abhishek Pandey - Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+
+    <!-- JavaScript for Node Animation and Modal -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
