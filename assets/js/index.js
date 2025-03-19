@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(contactForm);
             
             // Send to Formspree
-            fetch('https://formspree.io/f/myzezgqr', {
+            fetch('https://formspree.io/f/mgvavrqz', {
                 method: 'POST',
                 body: formData,
                 headers: {
