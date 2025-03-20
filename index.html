@@ -25,23 +25,64 @@
         <div id="particles-js"></div>
         <div class="hero-content">
             <h1 class="hero-name">Abhishek Pandey</h1>
-            <p id="auto-typer" style="margin-bottom: 10px;">I'm passionate about <span id="typing-text"></span><span class="cursor">|</span></p>
-            <a href="#about" class="btn btn-primary">About Me</a>
+            <p id="auto-typer" style="margin-bottom: 10px;">
+                I'm passionate about <span id="typing-text"></span><span class="cursor">|</span>
+            </p>
+            <div class="btn-wrapper">
+                <a href="#about" class="btn btn-primary">About Me</a>
+            </div>
         </div>
     </section>
+    
 
     <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h1>About <span>Me</span></h1>
+                <div class="header-line"></div>
+            </div>
+            
             <div class="about-content">
-                <div class="about-image">
-                    <img src="assets\profile.jpg" alt="My Profile">
+                <div class="image-area">
+                    <div class="image-container">
+                        <img src="assets\profile.jpg" alt="Profile Image" id="profile-image">
+                        <div class="image-frame"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-years">1 Year</span>
+                        <span class="exp-months">7 Months+</span>
+                        <span class="exp-text">Experience</span>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <p>Hello! I'm a data-driven Enthusiast with expertise in Python, SQL, and Machine Learning. My work spans data analytics, AI, and web development, solving real-world challenges with impactful solutions.</p>
-                    <p>I have built interactive dashboards, ML-powered applications, and business intelligence tools using frameworks like Flask, and Power BI. Passionate about innovation and problem-solving, I continuously explore new technologies to create scalable and efficient applications.</p>
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                
+                <div class="info-area">
+                    <div class="bio-text">
+                        <p>Hello! I'm a <span class="highlight">data-driven Enthusiast</span> with expertise in Python, SQL, and Machine Learning. My work spans data analytics, AI, and web development, solving real-world challenges with impactful solutions.</p>
+                        
+                        <p>I have built interactive dashboards, ML-powered applications, and business intelligence tools using frameworks like Flask, and Power BI. Passionate about innovation and problem-solving, I continuously explore new technologies to create scalable and efficient applications.</p>
+                    </div>
+                    
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">AI</span>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Projects</span>
+                            <i class="fas fa-laptop-code"></i>
+                        </a>
+                        <a href="#download" class="btn btn-secondary">
+                            <span>Download CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,54 +91,83 @@
     <!-- Education/Experience Section -->
     <section id="education-experience">
         <div class="container">
-            <h2 class="section-title">Education</h2><!-- Academic & Professional Background -->
-            
-            <div id="section-header" class="section-header">
-                <h3>Academic Background</h3> <!-- Background Information -->
-                <div class="section-toggle">
-                    <button class="toggle-btn active" onclick="toggleSection('education')">Education</button>
-                    <button class="toggle-btn" onclick="toggleSection('experience')">Work Experience</button>
+            <div class="section-header">
+                <h2 class="section-title">Background</h2>
+                
+                <div class="ed_exp-section-toggle">
+                    <button class="ed_exp-toggle-btn active" data-section="education">Education</button>
+                    <button class="ed_exp-toggle-btn" data-section="experience">Experience</button>
                 </div>
             </div>
             
-            <!-- Education Content -->
-            <div id="education-content" class="toggle-content active">
-                <div class="education-card">
-                    <div class="education-entry">
-                        <h4 class="education-degree">Master of Science in Data Science</h4>
-                        <p class="education-institution">Thakur College of Science and Commerce</p>
-                        <p class="education-date">2023 - 2025</p>
+            <!-- Education Timeline -->
+            <div class="ed_exp-timeline" id="education-timeline">
+                <!-- MSc in Data Science -->
+                <div class="ed_exp-timeline-item">
+                    <div class="ed_exp-timeline-content">
+                        <div class="ed_exp-decoration-circle ed_exp-circle-1"></div>
+                        <div class="ed_exp-decoration-circle ed_exp-circle-2"></div>
+                        <div class="ed_exp-timeline-year">Aug 2023 – April 2025</div>
+                        <h3 class="ed_exp-timeline-title">MSc in Data Science</h3>
+                        <h4 class="ed_exp-timeline-subtitle">Thakur College of Science and Commerce</h4>
+                        <div class="ed_exp-timeline-location">Kandivali, Mumbai</div>
+                        <div class="ed_exp-timeline-highlight">CGPA – 8.10</div>
                     </div>
-                    <div class="education-entry">
-                        <h4 class="education-degree">Bachelor of Science in Computer Science</h4>
-                        <p class="education-institution">Thakur College of Science and Commerce</p>
-                        <p class="education-date">2019 - 2022</p>
+                </div>
+                
+                <!-- BSc in Data Science -->
+                <div class="ed_exp-timeline-item">
+                    <div class="ed_exp-timeline-content">
+                        <div class="ed_exp-decoration-circle ed_exp-circle-1"></div>
+                        <div class="ed_exp-decoration-circle ed_exp-circle-2"></div>
+                        <div class="ed_exp-timeline-year">Aug 2019 – April 2022</div>
+                        <h3 class="ed_exp-timeline-title">BSc in Data Science</h3>
+                        <h4 class="ed_exp-timeline-subtitle">Thakur College of Science and Commerce</h4>
+                        <div class="ed_exp-timeline-location">Kandivali, Mumbai</div>
+                        <div class="ed_exp-timeline-highlight">CGPA – 9.28</div>
                     </div>
                 </div>
             </div>
             
-
-            <div id="experience-content" class="toggle-content">
-                <div class="experience-card">
-                    
-                    <div class="experience-entry">
-                        <h4 class="experience-title">Machine Learning Intern</h4>
-                        <p class="experience-company">CODTECH IT Solutions</p>
-                        <p class="experience-date">February 2022 - March 2022</p>
-                        <p class="experience-description">Developed and optimized AI/ML models, including Decision Trees, Sentiment Analysis, Image Classification, and Recommendation Systems.</p>
-                        <p class="experience-description">Utilized Python, TensorFlow, Scikit-Learn, Pandas, and NumPy for data preprocessing, model training, and evaluation.</p>
-                        <p class="experience-description">Implemented hyperparameter tuning and feature engineering to enhance model performance.</p>
-                        <p class="experience-description">Gained hands-on experience in deep learning, NLP, and computer vision applications.</p>
+            <!-- Experience Timeline -->
+            <div class="ed_exp-timeline hidden" id="experience-timeline">
+                <!-- ML Intern -->
+                <div class="ed_exp-timeline-item">
+                    <div class="ed_exp-timeline-content">
+                        <div class="ed_exp-decoration-circle ed_exp-circle-1"></div>
+                        <div class="ed_exp-decoration-circle ed_exp-circle-2"></div>
+                        <div class="ed_exp-timeline-year">February 2025 – March 2025</div>
+                        <h3 class="ed_exp-timeline-title">Machine Learning Intern</h3>
+                        <h4 class="ed_exp-timeline-subtitle">CODTECH IT SOLUTIONS</h4>
+                        <div class="ed_exp-timeline-location">Remote</div>
+                        <div class="ed_exp-timeline-details">
+                            <ul class="ed_exp-timeline-list">
+                                <li>Developed <strong>Decision Tree Model, Sentiment Analysis, Image Classification, and Recommendation System</strong>.</li>
+                                <li>Utilized <strong>Python, TensorFlow, Scikit-Learn, Pandas, NumPy, and Matplotlib</strong> for model development.</li>
+                                <li>Improved model performance through <strong>hyperparameter tuning</strong> and <strong>feature engineering</strong>.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="experience-entry">
-                        <h4 class="experience-title">Technical Support Engineer (Data Analytics Focus)</h4>
-                        <p class="experience-company">ACL Digital (Client: Jio Partner IT)</p>
-                        <p class="experience-date">May 2022 – November 2023</p>
-                        <p class="experience-description">Analyzed large datasets using SQL, Python, and Excel to extract insights and support business decisions.</p>
-                        <p class="experience-description">Developed interactive dashboards and reports using Power BI to track key performance indicators (KPIs).</p>
-                        <p class="experience-description">Automated data workflows to improve reporting efficiency and operational accuracy.</p>
-                        <p class="experience-description">Optimized SQL queries for faster data retrieval and worked with GIS tools for location-based data analysis.</p>
-                        <p class="experience-description">Collaborated with cross-functional teams to resolve data-related issues and enhance IT operations.</p>
+                </div>
+                
+                <!-- Technical Support Engineer -->
+                <div class="ed_exp-timeline-item">
+                    <div class="ed_exp-timeline-content">
+                        <div class="ed_exp-decoration-circle ed_exp-circle-1"></div>
+                        <div class="ed_exp-decoration-circle ed_exp-circle-2"></div>
+                        <div class="ed_exp-timeline-year">May 2022 – November 2023</div>
+                        <h3 class="ed_exp-timeline-title">Technical Support Engineer (Data Analytics Focus)</h3>
+                        <h4 class="ed_exp-timeline-subtitle">ACL Digital (Client: Jio Partner IT)</h4>
+                        <div class="ed_exp-timeline-location">Mumbai</div>
+                        <div class="ed_exp-timeline-details">
+                            <ul class="ed_exp-timeline-list">
+                                <li><strong>Analyzed large datasets</strong> using <strong>SQL, Excel, and Python</strong> to extract insights and support business decisions.</li>
+                                <li><strong>Developed dashboards and reports</strong> to track key performance indicators (KPIs) and improve process efficiency.</li>
+                                <li><strong>Automated data workflows</strong> to streamline reporting and enhance operational accuracy.</li>
+                                <li><strong>Optimized SQL queries</strong> and worked with <strong>GIS tools</strong> to analyze location-based data for business processes (P2B, O2A, JMD).</li>
+                                <li><strong>Collaborated with cross-functional teams</strong> to resolve data-related issues and ensure smooth IT operations.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

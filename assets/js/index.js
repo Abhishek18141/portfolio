@@ -122,6 +122,135 @@ function typeEffect() {
     }
 }
 
+// About
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate elements on page load
+    animateElements();
+    
+    // Image hover effect with tilt
+    const imageContainer = document.querySelector('.image-container');
+    
+    if (imageContainer) {
+        imageContainer.addEventListener('mousemove', function(e) {
+            const { left, top, width, height } = this.getBoundingClientRect();
+            const x = (e.clientX - left) / width;
+            const y = (e.clientY - top) / height;
+            
+            const tiltX = (y - 0.5) * 10; // Max tilt of 10 degrees
+            const tiltY = (0.5 - x) * 10;
+            
+            this.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        });
+        
+        imageContainer.addEventListener('mouseleave', function() {
+            this.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+        });
+    }
+    
+    // Skill tags staggered animation
+    const skillTags = document.querySelectorAll('.skill-tag');
+    
+    skillTags.forEach((tag, index) => {
+        tag.style.opacity = '0';
+        tag.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            tag.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            tag.style.opacity = '1';
+            tag.style.transform = 'translateY(0)';
+        }, 100 + (index * 100)); // Staggered delay
+    });
+});
+
+// Function to animate elements on page load
+function animateElements() {
+    // Animate header
+    const header = document.querySelector('.about-header');
+    if (header) {
+        header.style.opacity = '0';
+        header.style.transform = 'translateY(-30px)';
+        
+        setTimeout(() => {
+            header.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            header.style.opacity = '1';
+            header.style.transform = 'translateY(0)';
+        }, 300);
+    }
+    
+    // Animate content
+    const content = document.querySelector('.about-content');
+    if (content) {
+        content.style.opacity = '0';
+        
+        setTimeout(() => {
+            content.style.transition = 'opacity 1s ease';
+            content.style.opacity = '1';
+        }, 600);
+    }
+    
+    // Animate bio text
+    const bioTexts = document.querySelectorAll('.bio-text p');
+    bioTexts.forEach((text, index) => {
+        text.style.opacity = '0';
+        text.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            text.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            text.style.opacity = '1';
+            text.style.transform = 'translateY(0)';
+        }, 800 + (index * 200));
+    });
+    
+    // Animate experience badge
+    const badge = document.querySelector('.experience-badge');
+    if (badge) {
+        badge.style.opacity = '0';
+        badge.style.transform = 'scale(0.8)';
+        
+        setTimeout(() => {
+            badge.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            badge.style.opacity = '1';
+            badge.style.transform = 'scale(1)';
+        }, 1000);
+    }
+    
+    // Animate buttons
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach((button, index) => {
+        button.style.opacity = '0';
+        button.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            button.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            button.style.opacity = '1';
+            button.style.transform = 'translateY(0)';
+        }, 1200 + (index * 200));
+    });
+}
+
+
+// education - experience 
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtns = document.querySelectorAll('.ed_exp-toggle-btn');
+    const timelines = document.querySelectorAll('.ed_exp-timeline');
+    
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            toggleBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Hide all timelines
+            timelines.forEach(timeline => timeline.classList.add('hidden'));
+            
+            // Show the selected timeline
+            const sectionToShow = this.getAttribute('data-section');
+            document.getElementById(`${sectionToShow}-timeline`).classList.remove('hidden');
+        });
+    });
+});
+
 document.addEventListener("DOMContentLoaded", typeEffect);
 
 function toggleSection(sectionType) {
