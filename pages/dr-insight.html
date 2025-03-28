@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DR-Insight - Project Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="icon" type="image/webp" href="../assets/favicon.png">
+	<link rel="icon" type="image/webp" href="../assets/favicon.webp">
     <link rel="stylesheet" href="../assets/css/project_pages.css">
-    <!-- Add any additional stylesheets here -->
 
     <meta property="og:title" content="Abhishek's Portfolio">
     <meta property="og:url" content="https://Abhishek18141.github.io/portfolio/">
-    <meta property="og:image" content="https://Abhishek18141.github.io/portfolio/assets/favicon.png">
+    <meta property="og:image" content="https://Abhishek18141.github.io/portfolio/assets/favicon.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:description" content="Welcome to my portfolio!">
@@ -67,15 +66,56 @@
                     <li>Firebase-connected contact system for user inquiries and feedback</li>
                 </ul>
                 
-                <!-- Example of iframe integration capability -->
                 <h2>Live Dashboard</h2>
                 <div class="iframe-container">
-                    <!-- Placeholder for iframe content like `https://www.example.com` -->
                     <iframe src="https://dr-insight.onrender.com/" width="100%" height="550" frameborder="0"></iframe>
                 </div>
                 
                 <h2>Technical Implementation</h2>
-                <p>The application uses Flask for the backend, with a PostgreSQL database to store users queries. The the feature extraction implemented using TensorFlowand machine learning models are implemented using scikit-learn and are integrated into the Flask application using joblib for model serialization.</p>
+                <p>The application uses Flask for the backend, with a PostgreSQL database to store users queries. The feature extraction is implemented using TensorFlow and machine learning models are implemented using scikit-learn and are integrated into the Flask application using joblib for model serialization.</p>
+                
+                <h2>Research Paper Insights</h2>
+                <div class="research-paper-section">
+                    <h3>Key Research Findings</h3>
+                    <p>Based on the comprehensive research paper, our DR-Insight project presents several groundbreaking insights:</p>
+                    
+                    <div class="research-highlights">
+                        <div class="highlight-card">
+                            <h4>Model Performance Comparison</h4>
+                            <ul>
+                                <li>Deep Learning Models:
+                                    <ul>
+                                        <li>InceptionV3: 96.32% binary, 76.67% multiclass accuracy</li>
+                                        <li>MobileNetV2: 95.36% binary, 77.35% multiclass accuracy</li>
+                                    </ul>
+                                </li>
+                                <li>Hybrid Approach (Best Performance):
+                                    <ul>
+                                        <li>MobileNetV2 + MLP: 96.59% binary classification</li>
+                                        <li>MobileNetV2 + SVM: 77.35% multiclass classification</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <h4>Diabetic Retinopathy Stages</h4>
+                            <p>The research identified five critical stages of Diabetic Retinopathy:</p>
+                            <ol>
+                                <li>No DR (Healthy Retina)</li>
+                                <li>Mild Non-Proliferative DR (NPDR)</li>
+                                <li>Moderate NPDR</li>
+                                <li>Severe NPDR</li>
+                                <li>Proliferative DR (PDR)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <h3>Research Paper Visualization</h3>
+                    <div class="pdf-viewer">
+                        <iframe src="TIJER2503073.pdf" width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
             
             <div class="project-links">
@@ -87,4 +127,4 @@
     
     <script src="../assets/js/project_pages.js"></script>
 </body>
-</html>
+</html> 
